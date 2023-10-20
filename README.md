@@ -22,6 +22,7 @@ second lambda function uses the output of first lambda function as input to imag
 
 third lambda function gets inference as input i.e. a two element list giving probability of a class. It filters the low confidence predictions based on threshold value of output provided by us. We have used 0.8 as threshold.
 
+![Step function workflow](https://github.com/Tanmay-jam/Build-a-ML-Workflow-For-Scones-Unlimited-On-Amazon-SageMaker/blob/main/working_step_function.png)
 
 The workflow of three lambda functions is orchestrated using step function. There we will need to provide input for first lambda function and further lambda functions will be invoked in a flow by output of previuos lambda function.
 Step function workflows are easy for integration with other services of AWS. Hence it becomes easy to add a flow of steps in a pipeline.
